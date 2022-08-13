@@ -80,7 +80,7 @@ class ToutiaoFavorites(object):
                     u"文章分类": favorites[i].get("chinese_tag", u"未知分类"),
                     u"文章标题": favorites[i].get("title", u"未知标题"),
                     u"文章链接": "http://www.toutiao.com"+favorites[i].get("source_url", u"未知链接"),
-                    u"发布时间": self.format_time(timestamp)
+                    u"发布时间": timestamp # self.format_time(timestamp)
                 }
                 yield info
 
