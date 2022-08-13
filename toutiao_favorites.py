@@ -121,7 +121,7 @@ class ToutiaoFavorites(object):
                 write_to_json(each)
 
         if save_choice in ["1", "3"]:
-            wb.save("/mnt/hgfs/Ubuntu8Windows/toutiao_favorites.xls")   # 保存execl表格
+            wb.save("./toutiao_favorites.xls")   # 保存execl表格
             print("已成功保存为execl")
         if save_choice in ["2", "3"]:
             f.write("]")
